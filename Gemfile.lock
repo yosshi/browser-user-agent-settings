@@ -1,11 +1,12 @@
 GEM
   remote: http://rubygems.org/
-  remote: http://rubygems.org/
   specs:
+    libxml-ruby (2.6.0)
     plist (3.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  libxml-ruby (~> 2.6.0)
   plist (~> 3.1.0)
