@@ -18,7 +18,7 @@ def generate_safari_user_agents_plist android_user_agents
 
   safari_user_agents_settings.concat split_bar
   safari_user_agents_settings.concat android
-  puts safari_user_agents_settings.to_plist
+  safari_user_agents_settings.to_plist
 end
 
 
@@ -49,5 +49,5 @@ options = {
 }
 
 android_user_agents = CSV.open('./android_ua.tsv', 'r', options)
-generate_safari_user_agents_plist android_user_agents
+puts generate_safari_user_agents_plist android_user_agents
 
