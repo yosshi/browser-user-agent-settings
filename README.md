@@ -10,7 +10,7 @@ Android の UserAgent を集めた情報を元に、Chrome や Safari の擬装�
 
     /Applications/Safari.app/Contents/Resources/UserAgents.plist
 
-Windows は手元に無いの未検証。
+Windows は手元に無いので未検証。
 
 ## User-agent switcher for Chrome
 
