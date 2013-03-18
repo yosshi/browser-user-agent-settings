@@ -1,7 +1,9 @@
 # README
+
 Android の UserAgent を集めた情報を元に、Chrome や Safari の擬装用 UserAgent リストを生成する。
 
 # 対応ブラウザ
+
 - Safari (Mac) 開発メニュー
 - User-agent switcher for Chrome
 
@@ -14,13 +16,14 @@ Windows は手元に無いので未検証。
 
 ## User-agent switcher for Chrome
 
+- https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg
+
 	settings -> import settings 
 
 取り込み用の XML ファイルを作成し、インポートする。
 
-
-
 ## 初期設定
+
 bundler を使って関連 gem をインストール
 
 	bundle install 
@@ -36,5 +39,5 @@ Chrome
 Safari 
 
 	ruby generate-safari-user-agent-resource.rb > UserAgents.plist
-	
-
+	sudo cp /Applications/Safari.app/Contents/Resources/UserAgents.plist /Applications/Safari.app/Contents/Resources/UserAgents.plist.back
+	cp UserAgents.plist /Applications/Safari.app/Contents/Resources/UserAgents.plist
